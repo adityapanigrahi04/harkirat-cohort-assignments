@@ -1,71 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Layout</title>
     <style>
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
-        }
-
-        .left {
-            background-color: red;
-        }
-
-        .right {
-            background-color: blue;
-        }
-        .vertical-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-        .horizontal-center {
-            margin: 0 auto;
-        }
-        .grid1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+      .container {
+        height: 500px;
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+      }
+      .left {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .right {
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+      }
+      .right h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="left">
-            <div>
-                <div class="horizontal-center">
-                    <h1>Left</h1>
-                </div>
-                <div>
-                    <h3>
-                    text text text text text text text text text text text text text
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="grid1">
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-                <h2>Col 1</h2>
-                <h2>Col 2</h2>
-                <h2>Col 3</h2>
-            </div>
-        </div>
-    </div>
-</body>
+      <div class="left">
+        <h1>Left</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          voluptatem consequuntur ea. Error adipisci soluta nobis illo sapiente
+          rerum, pariatur, alias eligendi quis odit, laborum similique eius
+          praesentium eos accusantium?
+        </p>
+      </div>
 
+      <div class="right">
+        <h1>col 1</h1>
+        <h1>col 2</h1>
+        <h1>col 3</h1>
+        <h1>col 4</h1>
+        <h1>col 5</h1>
+        <h1>col 6</h1>
+        <h1>col 7</h1>
+        <h1>col 8</h1>
+        <h1>col 9</h1>
+      </div>
+    </div>
+  </body>
 </html>
